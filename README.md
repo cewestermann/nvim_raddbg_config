@@ -2,8 +2,22 @@
 
 ### Setup
 Install the RADDBG debugger to a desired directory from here: https://github.com/EpicGamesExt/raddebugger
-Inside the root folder of the raddebugger, create a launch_raddbg.bat script. I've uploaded mine which is minimal, but I created it if I wanted to add more configuration later. 
+Inside the root folder of the raddebugger, create a launch_raddbg.bat script. I've uploaded mine which does
+some simple caching, so we don't reinitialize MVSC variables every time.
 
+Place the raddbg.lua file in your nvim config and require it. 
 
+From your nvim buffer, you should be able to set the target
 
+```
+:RadDbgSetTarget bin\Debug\main.exe
+```
+
+And from then on, just place your cursor on the line you want to break on and run
+
+```
+:RadDbgRunHere
+```
+
+I've personally mapped it to `<leader>dh` (for Debug Here)
 
