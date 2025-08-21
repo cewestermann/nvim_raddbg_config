@@ -2,8 +2,8 @@
 
 ### Setup
 Install the RADDBG debugger to a desired directory from here: https://github.com/EpicGamesExt/raddebugger
-Inside the root folder of the raddebugger, create a launch_raddbg.bat script. I've uploaded mine which does
-some simple caching, so we don't reinitialize MVSC variables every time.
+Inside the root folder of the raddebugger, create a launch_raddbg.bat script and add it to your PATH.
+I've uploaded mine which does some simple caching, so we don't reinitialize MVSC variables every time.
 
 Place the raddbg.lua file in your nvim config and require it. 
 
