@@ -45,6 +45,7 @@ goto :have_env
 call "%CACHE%"
 
 :have_env
-"raddbg.exe" %*
+"build\raddbg.exe" %*
 exit /b 0
 endlocal
+
