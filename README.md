@@ -21,3 +21,9 @@ And from then on, just place your cursor on the line you want to break on and ru
 
 I've personally mapped it to `<leader>dh` (for Debug Here)
 
+#### NOTE
+
+I've dabbled with setting breakpoints and running with an already open instance of RADDBG, but
+honestly, the debugger starts up so fast that it's almost like a window switch anyway. So personally,
+I just close the debugger after I've done the debugging for the given breakpoint and then just
+run the command again to re-open it.
