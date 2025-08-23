@@ -8,10 +8,11 @@ I've uploaded mine which does some simple caching, so we don't reinitialize MVSC
 
 Place the raddbg.lua file in your nvim config and require it. 
 
-From your nvim buffer, you should be able to set the target
+From your nvim buffer, you should be able to set the target *relative* to your neovim buffer!
+This is important, as I'm resolving the absolute path from it.
 
 ```
-:RadDbgSetTarget bin\Debug\main.exe
+:RadDbgSetTarget ..\bin\Debug\main.exe
 ```
 
 And from then on, just place your cursor on the line you want to break on and run
