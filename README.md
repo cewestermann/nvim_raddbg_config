@@ -1,10 +1,9 @@
 # Quick config that allows a "Run To Here" functionality from inside Neovim in RADDBG.
 
 ### Setup
-Install the RADDBG debugger to a desired directory from here: https://github.com/EpicGamesExt/raddebugger
-Inside the root folder of the raddebugger, create a launch_raddbg.bat script and add it to your PATH.
-Also add the raddebugger executable to PATH, which should be in the build\ directory after building. 
-I've uploaded mine which does some simple caching, so we don't reinitialize MVSC variables every time.
+Install the RADDBG debugger to a desired directory from here: https://github.com/EpicGamesExt/raddebugger.
+After it's built, go into the build directory and create a launch_raddbg.bat file. I've uploaded mine here.
+Add the raddebugger build\ directory to PATH.
 
 Place the raddbg.lua file in your nvim config and require it. 
 
